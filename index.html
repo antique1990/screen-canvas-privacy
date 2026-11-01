@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Screen Canvas 隐私政策 / Privacy Policy</title>
+<style>
+  :root {
+    --bg: #fbfbfd;
+    --card: #ffffff;
+    --ink: #1c1c22;
+    --muted: #5b5b68;
+    --line: #e6e6ee;
+    --accent: #4f46e5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14141a;
+      --card: #1c1c24;
+      --ink: #ececf4;
+      --muted: #a0a0b2;
+      --line: #2c2c38;
+      --accent: #8b85ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, "Segoe UI", "Microsoft YaHei", "PingFang SC", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 24px 96px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  .mark {
+    width: 40px; height: 40px; border-radius: 11px; flex: none;
+    background: linear-gradient(135deg, #6366f1, #4f46e5 60%, #4338ca);
+    display: grid; place-items: center;
+  }
+  .mark svg { width: 22px; height: 22px; }
+  h1 { font-size: 26px; margin: 0; letter-spacing: -.2px; }
+  .sub { color: var(--muted); font-size: 14px; margin: 2px 0 0; }
+  .meta {
+    color: var(--muted); font-size: 13.5px; margin: 26px 0 34px;
+    padding-bottom: 22px; border-bottom: 1px solid var(--line);
+  }
+  h2 {
+    font-size: 17px; margin: 38px 0 10px; letter-spacing: -.1px;
+    display: flex; align-items: baseline; gap: 9px;
+  }
+  h2 .n {
+    color: var(--accent); font-variant-numeric: tabular-nums;
+    font-size: 13px; font-weight: 600;
+  }
+  p { margin: 9px 0; }
+  ul { margin: 9px 0; padding-left: 22px; }
+  li { margin: 5px 0; }
+  code {
+    background: rgba(127,127,160,.13); padding: 1px 5px; border-radius: 5px;
+    font-size: 13.5px; font-family: ui-monospace, Consolas, monospace;
+  }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+  a:hover { border-bottom-color: currentColor; }
+  .note {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin: 16px 0; font-size: 14.5px; color: var(--muted);
+  }
+  .lang {
+    display: inline-flex; gap: 4px; margin-bottom: 30px;
+    border: 1px solid var(--line); border-radius: 9px; padding: 3px;
+    background: var(--card);
+  }
+  .lang button {
+    border: 0; background: transparent; color: var(--muted); cursor: pointer;
+    font: inherit; font-size: 13.5px; padding: 5px 14px; border-radius: 7px;
+  }
+  .lang button[aria-selected="true"] { background: var(--accent); color: #fff; }
+  footer {
+    margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 13px;
+  }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 17.5 9 9l4.5 5.5L16 11l5 6.5" />
+        <path d="M4 4h16v16H4z" opacity=".45" />
+      </svg>
+    </div>
+    <div>
+      <h1>Screen Canvas</h1>
+      <p class="sub">屏幕画布 · Windows screen annotation app</p>
+    </div>
+  </header>
+
+  <div class="lang" role="tablist">
+    <button role="tab" aria-selected="true" data-lang="zh">中文</button>
+    <button role="tab" aria-selected="false" data-lang="en">English</button>
+  </div>
+
+  <!-- ============================ 中文 ============================ -->
+  <main data-pane="zh">
+    <p class="meta">隐私政策 · 生效日期 2026 年 1 月 1 日 · 最近更新 2026 年 11 月 1 日</p>
+
+    <p>Screen Canvas（屏幕画布）是一款运行在您本机上的 Windows 桌面标注工具。
+       本政策说明本软件如何处理数据。核心结论很简单：<strong>它不收集您的任何数据。</strong></p>
+
+    <h2><span class="n">1</span>我们收集哪些信息</h2>
+    <ul>
+      <li>我们<strong>不收集、不上传、不出售</strong>任何个人信息或设备信息。</li>
+      <li>软件不含任何遥测、统计、崩溃上报或广告 SDK。</li>
+      <li>无需注册或登录即可使用全部功能。</li>
+    </ul>
+
+    <h2><span class="n">2</span>数据如何存储</h2>
+    <ul>
+      <li>您的标注、截图与设置全部只保存在本机。</li>
+      <li>设置文件位于 <code>%LocalAppData%\ScreenCanvas\settings.json</code>，内容仅限界面偏好（工具、颜色、主题、界面语言、翻译目标语言）。</li>
+      <li>上述任何内容都不会被发送到开发者服务器。</li>
+    </ul>
+
+    <h2><span class="n">3</span>翻译功能（可选）</h2>
+    <p>仅当您主动使用「翻译」工具时，才会有对外网络请求：</p>
+    <ul>
+      <li>您所选区域内的文字会通过 HTTPS 发送到第三方翻译服务以取得译文，优先使用
+          <a href="https://mymemory.translated.net" target="_blank" rel="noopener">MyMemory</a>，
+          不可用时回退到 Google 翻译公共接口（<code>translate.googleapis.com</code>）。</li>
+      <li>请求中不附带账号、设备标识或任何身份信息；文字仅用于生成译文，我们不做留存。</li>
+      <li>若您从不使用翻译工具，本软件不会产生任何对外网络连接。</li>
+    </ul>
+
+    <h2><span class="n">4</span>第三方服务</h2>
+    <p>MyMemory 与 Google 翻译均为独立第三方，其数据处理受各自隐私政策约束。
+       除翻译外，本软件不调用任何其他外部服务。</p>
+
+    <h2><span class="n">5</span>剪贴板与截图</h2>
+    <p>截图工具会把您框选的画面写入剪贴板并保存到您指定的本地路径，该过程完全在本机完成，
+       不涉及任何网络传输。</p>
+
+    <h2><span class="n">6</span>儿童隐私</h2>
+    <p>本软件不面向儿童收集任何信息，也不含适龄限制内容。</p>
+
+    <h2><span class="n">7</span>您的权利</h2>
+    <p>您可以随时卸载本软件，并手动删除上述设置文件以清除全部本地数据。
+       由于我们不持有您的任何数据，因此不存在需要向您提供或删除的服务器端记录。</p>
+
+    <h2><span class="n">8</span>政策变更与联系方式</h2>
+    <p>若本政策发生实质性变更，我们会更新本页顶部的「最近更新」日期。
+       如有任何疑问，请通过
+       <a href="https://github.com/antique1990/screen-canvas-privacy/issues" target="_blank" rel="noopener">问题反馈页</a>
+       联系我们。</p>
+  </main>
+
+  <!-- ============================ English ============================ -->
+  <main data-pane="en" hidden>
+    <p class="meta">Privacy Policy · Effective January 1, 2026 · Last updated November 1, 2026</p>
+
+    <p>Screen Canvas is a Windows desktop annotation tool that runs entirely on your own
+       machine. This policy explains how the app handles data. The short version:
+       <strong>it collects nothing from you.</strong></p>
+
+    <h2><span class="n">1</span>What we collect</h2>
+    <ul>
+      <li>We do <strong>not</strong> collect, upload or sell any personal or device information.</li>
+      <li>The app contains no telemetry, analytics, crash-reporting or advertising SDKs.</li>
+      <li>All features work without an account or sign-in.</li>
+    </ul>
+
+    <h2><span class="n">2</span>How data is stored</h2>
+    <ul>
+      <li>Your annotations, screenshots and settings stay on your device only.</li>
+      <li>Settings live in <code>%LocalAppData%\ScreenCanvas\settings.json</code> and hold UI
+          preferences only (tool, color, theme, UI language, translation target).</li>
+      <li>None of the above is ever sent to a developer server.</li>
+    </ul>
+
+    <h2><span class="n">3</span>Translation feature (optional)</h2>
+    <p>An outbound network request only happens when you actively use the Translate tool:</p>
+    <ul>
+      <li>The text inside the region you select is sent over HTTPS to a third-party
+          translation service: <a href="https://mymemory.translated.net" target="_blank" rel="noopener">MyMemory</a>
+          first, falling back to the public Google Translate endpoint
+          (<code>translate.googleapis.com</code>) if MyMemory is unavailable.</li>
+      <li>No account, device identifier or identity information is attached. The text is used
+          solely to produce the translation and is not retained by us.</li>
+      <li>If you never use Translate, the app makes no outbound connection at all.</li>
+    </ul>
+
+    <h2><span class="n">4</span>Third-party services</h2>
+    <p>MyMemory and Google Translate are independent third parties governed by their own
+       privacy policies. No other external service is called.</p>
+
+    <h2><span class="n">5</span>Clipboard and screenshots</h2>
+    <p>The screenshot tool writes your selection to the clipboard and to a local path you
+       choose. This happens entirely on your machine and involves no network transfer.</p>
+
+    <h2><span class="n">6</span>Children's privacy</h2>
+    <p>The app does not target children for data collection and contains no age-restricted
+       content.</p>
+
+    <h2><span class="n">7</span>Your rights</h2>
+    <p>You may uninstall the app and delete the settings file at any time to erase all local
+       data. Because we hold none of your data, there are no server-side records to request or
+       delete.</p>
+
+    <h2><span class="n">8</span>Changes and contact</h2>
+    <p>If this policy changes materially, we will update the "last updated" date above.
+       For any question, please reach us through the
+       <a href="https://github.com/antique1990/screen-canvas-privacy/issues" target="_blank" rel="noopener">issue tracker</a>.</p>
+  </main>
+
+  <footer>
+    Screen Canvas · Publisher: AntiqueDev · Store ID 9P2KL0XX3QS5
+  </footer>
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.lang button');
+  const panes = document.querySelectorAll('main[data-pane]');
+  tabs.forEach(btn => btn.addEventListener('click', () => {
+    const lang = btn.dataset.lang;
+    tabs.forEach(b => b.setAttribute('aria-selected', String(b === btn)));
+    panes.forEach(p => { p.hidden = p.dataset.pane !== lang; });
+    document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+  }));
+</script>
+</body>
+</html>
